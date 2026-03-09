@@ -1,0 +1,32 @@
+[build]
+  publish = "."
+  functions = "netlify/functions"
+
+# ── Redirects ─────────────────────────────────────────────────
+[[redirects]]
+  from = "/*"
+  to = "/404.html"
+  status = 404
+
+# ── Function-specific settings ────────────────────────────────
+
+# stripe-webhook needs raw body (not parsed) for signature verification
+[functions."stripe-webhook"]
+  included_files = []
+
+# ── Headers ───────────────────────────────────────────────────
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "payment=(*)"
+
+# Apple Pay domain verification (Stripe serves this automatically
+# once you register your domain in the Stripe Dashboard →
+# Settings → Payment methods → Apple Pay → Add domain)
+[[headers]]
+  for = "/.well-known/apple-developer-merchantid-domain-association"
+  [headers.values]
+    Content-Type = "text/plain"

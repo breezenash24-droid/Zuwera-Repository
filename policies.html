@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="theme-color" content="#000000">
+  <title>Policies & FAQ — Zuwera</title>
+  <meta name="description" content="Zuwera shipping, returns, privacy policy, terms of service and frequently asked questions.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Policies & FAQ — Zuwera">
+  <meta property="og:description" content="Zuwera shipping, returns, privacy policy, terms of service and frequently asked questions.">
+  <meta property="og:url" content="https://zuwera.store/policies.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Zuwera">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Policies & FAQ — Zuwera">
+  <meta name="twitter:description" content="Zuwera shipping, returns, privacy policy, terms of service and frequently asked questions.">  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --black: #0a0a0a;
+      --white: #f5f5f0;
+      --muted: rgba(245,245,240,0.5);
+      --border: rgba(245,245,240,0.1);
+    }
+
+    body {
+      background: var(--black);
+      color: var(--white);
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 300;
+      overflow-x: hidden;
+    }
+
+    /* NAV */
+    .nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.2rem 2.5rem;
+      background: #000000;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      box-shadow: 0 1px 12px rgba(0,0,0,0.3);
+    }
+    .nav-logo-link {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .nav-wordmark {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.6rem;
+      letter-spacing: 0.18em;
+      color: var(--white);
+    }
+    .nav-back {
+      background: none;
+      border: none;
+      color: var(--white);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      cursor: pointer;
+      opacity: 0.55;
+      transition: opacity 0.2s;
+      text-decoration: none;
+    }
+    .nav-back:hover { opacity: 1; }
+
+    /* PAGE LAYOUT */
+    .page-wrap {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 9rem 2.5rem 6rem;
+    }
+
+    /* HERO TITLE */
+    .page-title {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(3.5rem, 8vw, 6rem);
+      letter-spacing: 0.06em;
+      line-height: 0.95;
+      margin-bottom: 0.6rem;
+    }
+    .page-subtitle {
+      font-size: 0.82rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 4rem;
+    }
+
+    /* TAB NAV */
+    .tab-nav {
+      display: flex;
+      gap: 0;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 3.5rem;
+      flex-wrap: wrap;
+    }
+    .tab-btn {
+      background: none;
+      border: none;
+      color: var(--muted);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      cursor: pointer;
+      padding: 0.8rem 1.6rem 0.8rem 0;
+      margin-right: 1.5rem;
+      border-bottom: 2px solid transparent;
+      margin-bottom: -1px;
+      transition: color 0.2s, border-color 0.2s;
+    }
+    .tab-btn:hover { color: var(--white); }
+    .tab-btn.active {
+      color: var(--white);
+      border-bottom-color: var(--white);
+    }
+
+    /* SECTIONS */
+    .tab-panel { display: none; }
+    .tab-panel.active { display: block; }
+
+    /* POLICY BLOCKS */
+    .policy-section {
+      margin-bottom: 3rem;
+      padding-bottom: 3rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .policy-section:last-child {
+      border-bottom: none;
+    }
+    .policy-section h2 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.5rem;
+      letter-spacing: 0.1em;
+      margin-bottom: 1rem;
+      color: var(--white);
+    }
+    .policy-section p {
+      font-size: 0.92rem;
+      line-height: 1.85;
+      color: rgba(245,245,240,0.65);
+      margin-bottom: 0.9rem;
+    }
+    .policy-section p:last-child { margin-bottom: 0; }
+    .policy-section ul {
+      list-style: none;
+      margin: 0.5rem 0 0.9rem;
+    }
+    .policy-section ul li {
+      font-size: 0.92rem;
+      line-height: 1.85;
+      color: rgba(245,245,240,0.65);
+      padding-left: 1.2rem;
+      position: relative;
+      margin-bottom: 0.3rem;
+    }
+    .policy-section ul li::before {
+      content: '—';
+      position: absolute;
+      left: 0;
+      color: rgba(245,245,240,0.25);
+      font-size: 0.8rem;
+    }
+    .policy-highlight {
+      background: rgba(245,245,240,0.04);
+      border-left: 2px solid rgba(245,245,240,0.2);
+      padding: 1rem 1.2rem;
+      margin: 1rem 0;
+      font-size: 0.88rem;
+      line-height: 1.7;
+      color: rgba(245,245,240,0.6);
+    }
+
+    /* FAQ */
+    .faq-item {
+      border-bottom: 1px solid var(--border);
+    }
+    .faq-question {
+      width: 100%;
+      background: none;
+      border: none;
+      color: var(--white);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.92rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      text-align: left;
+      cursor: pointer;
+      padding: 1.3rem 2rem 1.3rem 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: opacity 0.2s;
+    }
+    .faq-question:hover { opacity: 0.7; }
+    .faq-icon {
+      font-size: 1.2rem;
+      color: var(--muted);
+      transition: transform 0.25s ease;
+      flex-shrink: 0;
+      margin-left: 1rem;
+    }
+    .faq-item.open .faq-icon { transform: rotate(45deg); }
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease, padding 0.3s ease;
+      font-size: 0.9rem;
+      line-height: 1.85;
+      color: rgba(245,245,240,0.55);
+    }
+    .faq-item.open .faq-answer {
+      max-height: 400px;
+      padding-bottom: 1.4rem;
+    }
+
+    /* CONTACT CTA */
+    .contact-cta {
+      margin-top: 4rem;
+      padding: 2.5rem;
+      border: 1px solid var(--border);
+      text-align: center;
+    }
+    .contact-cta h3 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.5rem;
+      letter-spacing: 0.1em;
+      margin-bottom: 0.5rem;
+    }
+    .contact-cta p {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-bottom: 1.4rem;
+    }
+    .contact-cta a {
+      display: inline-block;
+      background: var(--white);
+      color: var(--black);
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1rem;
+      letter-spacing: 0.15em;
+      padding: 0.8rem 2.2rem;
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+    .contact-cta a:hover { opacity: 0.85; }
+
+    /* MOBILE */
+    @media (max-width: 600px) {
+      .nav { padding: 1rem 1.2rem; padding-top: calc(1rem + env(safe-area-inset-top)); }
+      .page-wrap { padding: 5.5rem 1.2rem 2rem; }
+      .page-title { font-size: clamp(2.5rem, 12vw, 4rem); }
+      .tab-nav { gap: 0; overflow-x: auto; -webkit-overflow-scrolling: touch; padding-bottom: 2px; }
+      .tab-btn { padding: 0.7rem 1rem; font-size: 0.7rem; white-space: nowrap; min-height: 44px; }
+      .policy-section { padding: 1.5rem 0; }
+      .policy-highlight { padding: 1rem 1.2rem; }
+      .contact-cta { padding: 1.5rem 1rem; }
+      .contact-cta a { display: block; text-align: center; }
+      footer { padding: 1.5rem 1.2rem; padding-bottom: calc(1.5rem + env(safe-area-inset-bottom)); }
+    }
+
+    /* FOOTER */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 2rem 2.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    footer p {
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      color: rgba(245,245,240,0.3);
+      text-transform: uppercase;
+    }
+    footer a {
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      color: rgba(245,245,240,0.3);
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+    footer a:hover { opacity: 0.7; color: var(--white); }
+  </style>  <link rel="icon" type="image/png" href="data:image/png;base64,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">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DCVWDZ8ZBC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-DCVWDZ8ZBC');
+  </script>
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav">
+    <a href="index.html" class="nav-logo-link" aria-label="Back to Zuwera home">
+      <span class="nav-wordmark">ZUWERA</span>
+    </a>
+    <a href="index.html" class="nav-back">&#8592; Back to Home</a>
+  </header>
+
+  <!-- PAGE -->
+  <main class="page-wrap">
+
+    <h1 class="page-title">Policies<br>&amp; FAQ</h1>
+    <p class="page-subtitle">Last updated — 2026</p>
+
+    <!-- TABS -->
+    <nav class="tab-nav" aria-label="Policy sections">
+      <button class="tab-btn active" data-tab="shipping">Shipping</button>
+      <button class="tab-btn" data-tab="returns">Returns</button>
+      <button class="tab-btn" data-tab="privacy">Privacy</button>
+      <button class="tab-btn" data-tab="terms">Terms</button>
+      <button class="tab-btn" data-tab="faq">FAQ</button>
+    </nav>
+
+    <!-- SHIPPING -->
+    <div class="tab-panel active" id="tab-shipping">
+
+      <div class="policy-section">
+        <h2>Shipping Policy</h2>
+        <p>All Zuwera orders are processed within 1–3 business days after your order is confirmed. Orders placed on weekends or US public holidays will begin processing the next business day.</p>
+        <div class="policy-highlight">
+          Once your order ships, you will receive a confirmation email with a tracking number. Please allow up to 24 hours for tracking to update.
+        </div>
+      </div>
+
+      <div class="policy-section">
+        <h2>Domestic Shipping (United States)</h2>
+        <ul>
+          <li>Standard Shipping — 5 to 7 business days</li>
+          <li>Free standard shipping on all orders over $100</li>
+          <li>Orders under $100 — flat rate of $6.99</li>
+        </ul>
+        <p>Zuwera currently ships to all 50 US states including Alaska and Hawaii. PO Boxes and APO/FPO addresses are accepted for standard shipping.</p>
+      </div>
+
+      <div class="policy-section">
+        <h2>International Shipping</h2>
+        <p>International shipping is not yet available but is coming soon. Sign up for our newsletter to be notified when we expand to your country.</p>
+      </div>
+
+      <div class="policy-section">
+        <h2>Order Issues</h2>
+        <p>If your order arrives damaged, incorrect, or does not arrive within the estimated window, please contact us at <strong><a href="/cdn-cgi/l/email-protection#7917180a100b0c1b0b1c1c031c39030c0e1c0b18570a0d160b1c"><span class="__cf_email__" data-cfemail="b1dfd0c2d8c3c4d3c3d4d4cbd4f1cbc4c6d4c3d09fc2c5dec3d4">[email&#160;protected]</span></a></strong> within 7 days of the expected delivery date and we will make it right.</p>
+        <p>Zuwera is not responsible for delays caused by carrier disruptions, weather events, or incorrect shipping addresses provided at checkout.</p>
+      </div>
+
+    </div>
+
+    <!-- RETURNS -->
+    <div class="tab-panel" id="tab-returns">
+
+      <div class="policy-section">
+        <h2>Return Policy</h2>
+        <p>We want you to love what you wear. If you are not completely satisfied with your Zuwera purchase, you may return eligible items within <strong>30 days</strong> of the delivery date for a full refund or exchange.</p>
+        <div class="policy-highlight">
+          Items must be unworn, unwashed, and in their original condition with all tags attached to be eligible for a return.
+        </div>
+      </div>
+
+      <div class="policy-section">
+        <h2>How to Start a Return</h2>
+        <ul>
+          <li>Email us at <a href="/cdn-cgi/l/email-protection#432d22302a3136213126263926033936342631226d30372c3126"><span class="__cf_email__" data-cfemail="f997988a908b8c9b8b9c9c839cb9838c8e9c8b98d78a8d968b9c">[email&#160;protected]</span></a> with your order number and reason for return</li>
+          <li>We will send you a prepaid return shipping label within 1–2 business days</li>
+          <li>Pack your item securely and drop it off at any USPS location</li>
+          <li>Refunds are processed within 5–7 business days of receiving the return</li>
+        </ul>
+        <p>Refunds will be issued to the original payment method. Depending on your bank or card provider, it may take an additional 3–5 business days to appear on your statement.</p>
+      </div>
+
+      <div class="policy-section">
+        <h2>Non-Returnable Items</h2>
+        <ul>
+          <li>Items marked Final Sale at time of purchase</li>
+          <li>Items that have been worn, washed, or altered</li>
+          <li>Items without original tags or packaging</li>
+          <li>Gift cards</li>
+        </ul>
+      </div>
+
+      <div class="policy-section">
+        <h2>Exchanges</h2>
+        <p>We currently process exchanges as a return and repurchase. Start a return for the original item and place a new order for the size or style you need. This ensures you get the item before stock runs out.</p>
+      </div>
+
+    </div>
+
+    <!-- PRIVACY -->
+    <div class="tab-panel" id="tab-privacy">
+
+      <div class="policy-section">
+        <h2>Privacy Policy</h2>
+        <p>Zuwera ("we", "us", "our") is committed to protecting your personal information. This policy explains what data we collect, how we use it, and your rights regarding it.</p>
+      </div>
+
+      <div class="policy-section">
+        <h2>Information We Collect</h2>
+        <ul>
+          <li>Name, email address, and shipping address when you place an order</li>
+          <li>Payment information — processed securely by Stripe, we never store your card details</li>
+          <li>Browsing behavior on our site via analytics tools (e.g. Google Analytics)</li>
+          <li>Email address if you subscribe to our newsletter</li>
+        </ul>
+      </div>
+
+      <div class="policy-section">
+        <h2>How We Use Your Information</h2>
+        <ul>
+          <li>To fulfill and ship your orders</li>
+          <li>To send order confirmations and shipping updates</li>
+          <li>To send marketing emails if you have opted in (you can unsubscribe at any time)</li>
+          <li>To improve our website and customer experience</li>
+        </ul>
+        <p>We do not sell, rent, or trade your personal information to third parties for their marketing purposes.</p>
+      </div>
+
+      <div class="policy-section">
+        <h2>Cookies</h2>
+        <p>Our website uses cookies to improve your browsing experience and analyze site traffic. By using our site, you consent to our use of cookies. You can disable cookies in your browser settings at any time.</p>
+      </div>
+
+      <div class="policy-section">
+        <h2>Your Rights</h2>
+        <p>You have the right to access, correct, or delete your personal data at any time. To make a request, email us at <a href="/cdn-cgi/l/email-protection#264847554f5453445443435c43665c5351435447085552495443"><span class="__cf_email__" data-cfemail="402e2133293235223225253a25003a35372532216e33342f3225">[email&#160;protected]</span></a> and we will respond within 30 days.</p>
+      </div>
+
+    </div>
+
+    <!-- TERMS -->
+    <div class="tab-panel" id="tab-terms">
+
+      <div class="policy-section">
+        <h2>Terms of Service</h2>
+        <p>By accessing or purchasing from zuwera.com you agree to be bound by the following terms. Please read them carefully.</p>
+      </div>
+
+      <div class="policy-section">
+        <h2>Use of Our Site</h2>
+        <p>You may use our site for lawful purposes only. You agree not to use the site in any way that could damage, disable, or impair it, or interfere with any other user's access.</p>
+        <p>All content on this site — including text, images, logos, and design — is the property of Zuwera and may not be reproduced or used without written permission.</p>
+      </div>
+
+      <div class="policy-section">
+        <h2>Orders & Pricing</h2>
+        <p>We reserve the right to refuse or cancel any order at our discretion, including in cases of pricing errors, suspected fraud, or product unavailability. If your order is cancelled, you will receive a full refund.</p>
+        <p>Prices are listed in US dollars and are subject to change without notice. Sales tax is calculated at checkout based on your shipping address.</p>
+      </div>
+
+      <div class="policy-section">
+        <h2>Limitation of Liability</h2>
+        <p>Zuwera is not liable for any indirect, incidental, or consequential damages arising from the use of our products or website. Our total liability to you for any claim shall not exceed the amount paid for the relevant order.</p>
+      </div>
+
+      <div class="policy-section">
+        <h2>Governing Law</h2>
+        <p>These terms are governed by the laws of the United States. Any disputes shall be resolved in the applicable courts of the United States.</p>
+      </div>
+
+    </div>
+
+    <!-- FAQ -->
+    <div class="tab-panel" id="tab-faq">
+
+      <div class="policy-section" style="border-bottom:none; margin-bottom:0; padding-bottom:0;">
+
+        <div class="faq-item">
+          <button class="faq-question">
+            When will my order ship?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">Orders are processed within 1–3 business days. Once shipped, standard delivery takes 5–7 business days within the United States. You will receive a tracking number by email as soon as your order leaves our facility.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            How do I return an item?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">Email us at <a href="/cdn-cgi/l/email-protection#b4dad5c7ddc6c1d6c6d1d1ced1f4cec1c3d1c6d59ac7c0dbc6d1"><span class="__cf_email__" data-cfemail="6907081a001b1c0b1b0c0c130c29131c1e0c1b08471a1d061b0c">[email&#160;protected]</span></a> with your order number and we will send you a prepaid return label within 1–2 business days. Items must be returned within 30 days of delivery and must be unworn and in original condition with tags attached.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Is my payment information secure?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">Yes. All payments are processed by Stripe, one of the world's most trusted payment processors. Your card details are encrypted and never stored on our servers. We use 256-bit SSL encryption on all transactions.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Do you ship internationally?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">International shipping is not yet available but is coming soon. Sign up for our newsletter to be the first to know when we expand globally.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            What sizes do you carry?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">Our first collection is launching soon. We will carry a full size range and publish a detailed size guide before the drop so you can order with confidence. Sign up to be notified.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Can I change or cancel my order?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">We can make changes or cancellations within 12 hours of placing your order. After that, the order may already be in fulfillment. Email <a href="/cdn-cgi/l/email-protection#5c323d2f352e293e2e393926391c26292b392e3d722f28332e39"><span class="__cf_email__" data-cfemail="076966746e7572657562627d62477d7270627566297473687562">[email&#160;protected]</span></a> as soon as possible and we will do our best to help.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            How do I track my order?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">Once your order ships you will receive an email with a tracking number. You can use this number on the carrier's website to follow your package in real time. Allow up to 24 hours after receiving the email for tracking to activate.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            What if my item arrives damaged or incorrect?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">We are sorry to hear that — please email <a href="/cdn-cgi/l/email-protection#167877657f6463746473736c73566c6361736477386562796473"><span class="__cf_email__" data-cfemail="533d32203a2126312136362936132926243621327d20273c2136">[email&#160;protected]</span></a> within 7 days of delivery with a photo of the issue and your order number. We will send a replacement or issue a full refund immediately, no return required.</div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- CONTACT CTA -->
+    <div class="contact-cta">
+      <h3>Still Have Questions?</h3>
+      <p>Our team is here to help. Reach out and we'll get back to you within 24 hours.</p>
+      <a href="/cdn-cgi/l/email-protection#2c424d5f455e594e5e494956496c56595b495e4d025f58435e49">Email Us</a>
+    </div>
+
+  </main>
+
+  <footer>
+    <a href="index.html">← Back to Zuwera</a>
+    <p>© 2026 Zuwera. All rights reserved.</p>
+    <a href="sizeguide.html">Size Guide</a>
+    <a href="policies.html"
